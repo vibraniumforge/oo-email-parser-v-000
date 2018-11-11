@@ -9,8 +9,9 @@ class EmailParser
     emails.split.collect do |email|
       email.split(",")
     end
-    .flatten.uniq
     # binding.pry
+    .flatten.uniq
+    
     # puttign pry above flatten fails all tests. this works?
   end
 
